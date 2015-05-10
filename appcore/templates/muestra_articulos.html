@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Busqueda realizada </title>
+</head>
+<body>
+	<ul>
+	{% for Articulo in filtrado %}
+		<li> <a href = "{% url 'mostrar_articulo_por_id' Articulo.id %}"> {{ Articulo.titulo}}</a> </li>
+	{% endfor %}
+	</ul>
+
+	<CENTER> <a href = "{% url 'home' %}"> Regresar a home... </a> </CENTER>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Busquedas</title>
+</head>
+<body>
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_titulo }}
+		<input type = "submit" value = "Buscar por titulo" />
+	</form>
+
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_abstract }}
+		<input type = "submit" value = "Buscar por abstract" />
+	</form>
+
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_autor }}
+		<input type = "submit" value = "Buscar por autor" />
+	</form>
+
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_fecha }}
+		<input type = "submit" value = "Buscar por fecha" />
+	</form>
+
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_doi }}
+		<input type = "submit" value = "Buscar por doi" />
+	</form>
+
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_editorial }}
+		<input type = "submit" value = "Buscar por editorial" />
+	</form>
+
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_revista }}
+		<input type = "submit" value = "Buscar por revista" />
+	</form>
+
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form_palabras_clave }}
+		<input type = "submit" value = "Buscar por palabras clave" />
+	</form>
+
+	<CENTER> <a href = "{% url 'home' %}"> Regresar a home... </a> </CENTER>
+</body>
+</html>

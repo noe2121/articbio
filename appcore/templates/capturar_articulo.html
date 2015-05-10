@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form actions = "" method = "post">{% csrf_token %}
+		{{ form.as_p }}
+		<input type = "submit" value = "Capturar articulo" />
+	</form>
+
+	<CENTER> <a href = "{% url 'home' %}"> Regresar a home... </a> </CENTER>
+</body>
+</html>
